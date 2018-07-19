@@ -115,6 +115,7 @@ export default class Canvas extends Component {
             source={{html}}
             onMessage={this.handleMessage}
             onLoad={this.handleLoad}
+            originWhitelist={['*']}
             mixedContentMode="always"
             scalesPageToFit={false}
             javaScriptEnabled
@@ -132,6 +133,7 @@ export default class Canvas extends Component {
           source={{html, baseUrl: '/'}}
           onMessage={this.handleMessage}
           onLoad={this.handleLoad}
+          originWhitelist={['*']}
           scrollEnabled={false}
           scalesPageToFit={false}
         />
